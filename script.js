@@ -432,3 +432,13 @@ function startFinale() {
 bgMusic.addEventListener('error', () => {
   console.log('ไม่พบไฟล์ song.mp3 — เว็บยังทำงานได้ตามปกติ');
 });
+/* ------------------------------------------------------------------
+   Init: แสดงหน้าเริ่มต้นเมื่อเปิดเว็บไซต์
+   ------------------------------------------------------------------ */
+showScreen(screenIntro);
+
+// ซ่อนปุ่มเสียงไว้ก่อน จะแสดงเมื่อกด READY
+soundToggle.hidden = true;
+
+// เตรียมสถานะปุ่มปิดจดหมาย
+closeLetterBtn.disabled = true;
